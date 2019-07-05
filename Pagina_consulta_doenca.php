@@ -7,9 +7,11 @@
 	</head>
 	<body>
 		<form name="form1" method="post">
-			<label>CPF: </label>
-			<input type = "text" name = "CPF" size = "11" id="CPF">
-			<button onclick = "getDoenca(document.form1.CPF.value);">Enviar</button>
+			<label>CPF</label>
+			<br>
+				<input type = "text" name = "cpf" size = "11" id="cpf">
+			<br>
+			<button onclick = "getDoenca(document.form1.cpf.value);">Enviar</button>
 		</form>		
 		<script type="text/javascript">
 			function getDoenca(cpf){

@@ -5,14 +5,14 @@
 		<meta charset="utf-8"/>
 	</head>
 	<body>
-		<h1>Bem vindo, escoteiro</h1>
+		<center><h1>Bem vindo, escoteiro</h1></center>
 			<ul>
 				<li>
 				<a href="Pagina_consulta_doenca.php">Consultar doenças cadastradas</a>
 				</li>
 				
 				<li>
-				<h2>Inscrição em atividades</h2>
+				<a href="Pagina_inscricao_atividades.php">Inscrição em atividades</a>
 				</li>
 			</ul>
 	</body>

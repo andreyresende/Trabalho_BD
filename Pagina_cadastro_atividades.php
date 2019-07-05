@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Página de cadastro de atividades</title>
-		<meta charset="utf-8"/>
+		<meta charset = "utf-8"/>
 	</head>
 	<body>
 		

@@ -5,18 +5,19 @@
 		<meta charset="utf-8"/>
 	</head>
 	<body>
-		<h1>Usuário</h1>
+		<center><h1>Página Inicial</h1></center>
+		<h3>Usuários</h3>
 			<ul>
 				<li>
 					<a href="Pagina_escoteiros.php">Escoteiro</a>
 				</li>
 				<li>
-					<h2>Instrutor</h2>
+					<a href="Pagina_instrutores.php">Instrutor</a>
 				</li>
 				<li>
-					<h2>Administrador</h2>
+					<a href="Pagina_administradores.php">Administrador</a>
 				</li>
 			</ul>
-		<h1>Cadastrar novo escoteiro</h1>
+		<a href="Pagina_cadastro_escoteiro.php">Cadastrar novo escoteiro</a>
 	</body>
 </html>
