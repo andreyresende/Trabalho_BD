@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Página de cadastro de escoteiros</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<form id="form1" name="form1">	
+			<label>CPF: </label>
+			<input type = "text" name = "CPF" size = "11">
+			<button onclick = "enviar();">Enviar</button>
+		</form>
+		<script type="text/javascript">
+			function enviar(){
+				$.ajax({
+				type: "POST",
+				url: "inscricao_paralimpico_control.php",				
+				data: "cod_instituicao_escola="+cod_instituicao_escola+"&cd_serie_escola="+cd_serie_escola+"&turno="+turno, 
+				
+				success: function(data) {
+						
+						$("#escola").html(data); 
+						$("#escola").prop('disabled',false);
+				}
+			});
+			}
+		</script>
+	</body>
+</html>
