@@ -1,6 +1,6 @@
 <?php
 $con = mysqli_connect("127.0.0.1", "root", "", "mydb");
-$db = mysqli_select_db($con,'mybd');
+$db  = mysqli_select_db($con, 'mybd');
 
 if (!empty($_POST['cpf_ajax'])) {
 
@@ -24,3 +24,4 @@ if (!empty($_POST['cpf_ajax'])) {
 		echo "0";
 	}
 }
+?>

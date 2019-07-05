@@ -42,6 +42,8 @@ include "Pagina_cadastro_escoteiro_control.php";
 			<br>
 
 			<button onclick = "validar();">Enviar</button>
+			<br>
+			<a href="Pagina_principal.php">Voltar</a>
 		</form>
 		<script type="text/javascript">
 			function validar(){

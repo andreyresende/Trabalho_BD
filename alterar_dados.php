@@ -12,7 +12,6 @@ $sql ="
 	$resultado = mysqli_query($con, $sql);
 	$row 	   = mysqli_fetch_assoc($resultado);
 ?>
-<!DOCTYPE html>
 <html>
 	<head>
 		<title>Página de edição de dados</title>

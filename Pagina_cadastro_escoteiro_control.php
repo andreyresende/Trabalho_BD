@@ -37,10 +37,10 @@ switch($acao){
 	break;
 
 	case 'alterar_cadastro':
-		$sql = "UPDATE `mydb`.`pessoa` 
+		$sql = "UPDATE mydb.pessoa
 				SET nome = '$nome'
 				WHERE cpf = '$cpf'";
-		$resultado = mysqli_query($con,$sql);	
+		$resultado = mysqli_query($con, $sql);	
 		if(!isset($resultado)){
 			echo "Erro na alteração";
 		}
@@ -50,39 +50,4 @@ switch($acao){
 		}		
 	break;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>

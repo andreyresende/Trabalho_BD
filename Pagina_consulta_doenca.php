@@ -9,7 +9,7 @@
 		<form name="form1" method="post">
 			<label>CPF</label>
 			<br>
-				<input type = "text" name = "cpf" size = "11" id="cpf">
+				<input type = "text" name = "cpf" size = "11">
 			<br>
 			<button onclick = "getDoenca(document.form1.cpf.value);">Enviar</button>
 		</form>		
@@ -25,7 +25,7 @@
 						 window.location = "resultado_consulta_doenca.php?cpf="+cpf;
 					}
 					else{
-						alert("false");
+						alert("Esse CPF não possui doenças crônicas cadastradas");
 					}
 				}
 				});
