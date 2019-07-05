@@ -41,6 +41,11 @@ include "Pagina_cadastro_escoteiro_control.php";
 				<input type = "text" name = "cep" size = "11">
 			<br>
 
+			<label>Foto</label>
+			<br>
+				<input type = "file" name = "imagem" size = "11">
+			<br>
+
 			<button onclick = "validar();">Enviar</button>
 			<br>
 			<a href="Pagina_principal.php">Voltar</a>
@@ -75,7 +80,7 @@ include "Pagina_cadastro_escoteiro_control.php";
 				confirmacao = 'Atenção! \n\n' + 'Deseja enviar?';
 				if (window.confirm(confirmacao)){
 					document.getElementById('form1').action = "Pagina_cadastro_escoteiro_control.php?acao=novo_cadastro";
-					document.getElementById('form1').submit();					
+					document.getElementById('form1').submit();	
 				}	
 			}
 		</script>

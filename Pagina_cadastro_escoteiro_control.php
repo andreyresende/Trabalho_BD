@@ -6,7 +6,15 @@ $data_nasc = (isset($_POST["data_nasc"]) ? $_POST["data_nasc"] : NULL);
 $email 	   = (isset($_POST["email"]) ? $_POST["email"] : NULL);
 $endereco  = (isset($_POST["endereco"]) ? $_POST["endereco"] : NULL);
 $cep	   = (isset($_POST["cep"]) ? $_POST["cep"] : NULL);
+/*$imagem	   = (isset($_FILES["imagem"]["tmp_name"]) ? $_FILES["imagem"]["tmp_name"] : NULL);
+$tamanho   = (isset($_FILES["imagem"]["size"]) ? $_FILES["imagem"]["size"] : NULL);*/
 $con   	   = mysqli_connect("127.0.0.1", "root", "", "mydb");
+/*$imagem = $_FILES['imagem']['tmp_name'];
+$tamanho = $_FILES['imagem']['size'];
+*/
+
+
+
 
 if(!$con){
 	die('Erro na conexão');
@@ -14,6 +22,16 @@ if(!$con){
 
 switch($acao){
 	case 'novo_cadastro':
+	/*if ( $imagem != "none" )
+{
+$fp = fopen($imagem, "rb");
+$conteudo = fread($fp, $tamanho);
+$conteudo = addslashes($conteudo);
+fclose($fp);
+}
+
+echo $conteudo;
+break;*/
 		$sql = "INSERT INTO
 		 		mydb.endereco (enderecoCompleto, cep)
 		 		VALUES
@@ -37,6 +55,11 @@ switch($acao){
 	break;
 
 	case 'alterar_cadastro':
+		$cpf = (isset($_GET["cpf"]) ? $_GET["cpf"] : NULL);
+
+		echo $nome;
+		echo $cpf;
+	
 		$sql = "UPDATE mydb.pessoa
 				SET nome = '$nome'
 				WHERE cpf = '$cpf'";

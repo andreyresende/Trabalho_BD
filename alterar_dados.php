@@ -19,6 +19,7 @@ $sql ="
 	</head>
 	<body>
 		<form id = "form1" name = "form1" method = "post">	
+			 
 			<label>Nome</label>
 			<br>
 			<input type = "text" name = "nome" size = "11" id = "nome" value = "<?php $row['nome_pessoa']?>">

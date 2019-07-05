@@ -33,10 +33,18 @@ $sql ="
 					<td style='padding: 10px'>".$row['nome_pessoa']."</td>
 					<td style='padding: 10px'>".$row['nome_doenca']."</td>
 					<td style='padding: 10px'><a href='alterar_dados.php?cpf=$cpf'>Alterar</a></td>
-					<td style='padding: 10px'><a href='#'>Deletar</a></td>";
+					<td style='padding: 10px'><button onclick>Deletar</button></td>";
 		    echo "</tr>"; 	 
 		}
 			echo "</table>";
 		?>
+		<script type="text/javascript">
+			function apagar(){
+				confirmacao = 'Atenção! \n\n' + 'Deseja desvincular essa doença do seu perfil?';
+				if(window.confirm(confirmacao)){
+					
+				}
+			}
+		</script>
 	</body>
 </html>

@@ -18,6 +18,10 @@
 			<li>
 				<a href="Pagina_consulta_doenca.php">Descartar equipamentos</a>
 			</li>
+
+			<li>
+				<a href="Pagina_inserir_tipo.php">Inserir tipo de equipamento</a>
+			</li>
 		</ul>
 	</body>
 </html>
