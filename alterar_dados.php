@@ -1,9 +1,7 @@
 <?php 
 $cpf = (isset($_GET["cpf"]) ? $_GET["cpf"] : NULL);
-
 $con = mysqli_connect("127.0.0.1", "root", "", "mydb");
 $db = mysqli_select_db($con,'mybd');
-
 $sql="
 			SELECT pe.nome as nome_pessoa ,dc.nome as nome_doenca, pe.cpf
 			FROM mydb.doencacronica dc
@@ -13,14 +11,12 @@ $sql="
 	";
 	$resultado = mysqli_query($con,$sql);
 	$row = mysqli_fetch_assoc($resultado);
-
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Página de edição de dados</title>
 		<meta charset="utf-8"/>
-		
 	</head>
 	<body>
 		<form id="form1" name="form1" method="post">	
@@ -30,7 +26,6 @@ $sql="
 		</form>
 		<script type="text/javascript">
 			function validar(cpf){
-				
 				if (form1.nome.value == "") {
 					alert("Nome não pode ser nulo");
 					return false;

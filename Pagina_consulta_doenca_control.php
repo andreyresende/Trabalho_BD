@@ -24,4 +24,3 @@ if (!empty($_POST['cpf_ajax'])) {
 		echo "0";
 	}
 }
-	

@@ -1,9 +1,7 @@
 <?php 
 $cpf = (isset($_GET["cpf"]) ? $_GET["cpf"] : NULL);
-
 $con = mysqli_connect("127.0.0.1", "root", "", "mydb");
 $db = mysqli_select_db($con,'mybd');
-
 $sql="
 			SELECT pe.nome as nome_pessoa ,dc.nome as nome_doenca
 			FROM mydb.doencacronica dc
@@ -12,14 +10,11 @@ $sql="
 			WHERE edc.escoteiro_pessoa_cpf = $cpf
 	";
 	$resultado = mysqli_query($con,$sql);
-
-
 ?>
 <html>
 	<head>
 		<title>Página de resultado</title>
 		<meta charset="utf-8"/>
-		
 	</head>
 	<body>
 		<?php
@@ -39,13 +34,9 @@ $sql="
 					<td>".$row['nome_doenca']."</td>
 					<td><a href='alterar_dados.php?cpf=$cpf' class='btn btn-info' role='button'>Alterar</a></td>
 					<td><a href='#' class='btn btn-info' role='button'>Deletar</a></td>";
-
 		    echo "</tr>"; 	 
 		}
 			echo "</table>";
-
-
 		?>
-		
 	</body>
 </html>

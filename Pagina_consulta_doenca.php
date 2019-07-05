@@ -1,8 +1,3 @@
-<?php
-//include "Pagina_consulta_doenca_control.php"
-
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,33 +10,24 @@
 			<label>CPF: </label>
 			<input type = "text" name = "CPF" size = "11" id="CPF">
 			<button onclick = "getDoenca(document.form1.CPF.value);">Enviar</button>
-
 		</form>		
 		<script type="text/javascript">
-
 			function getDoenca(cpf){
-				
 				$.ajax({
 				type: "POST",
 				url: "Pagina_consulta_doenca_control.php",				
 				data: "cpf_ajax="+cpf, 
 				
 				success: function(data) {
-					
 					if(data == 1){
 						 window.location = "resultado_consulta_doenca.php?cpf="+cpf;
 					}
 					else{
 						alert("false");
 					}
-					
 				}
-
-			});
-}	
-
-
-
+				});
+			}	
 		</script>
 	</body>
 </html>
