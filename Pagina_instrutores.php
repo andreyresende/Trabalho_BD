@@ -14,6 +14,10 @@
 			<li>
 				<a href="Pagina_consulta_doenca.php">Consultar escoteiro</a>
 			</li>
+
+			<li>
+				<a href="Pagina_consulta_aluguel.php">Ver aluguéis dos equipamentos</a>
+			</li>
 		</ul>
 	</body>
 </html>
