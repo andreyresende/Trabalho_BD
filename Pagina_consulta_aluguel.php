@@ -5,10 +5,7 @@
 		<meta charset="utf-8"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
-	<body>
-		<form name="form1" method="post">
-			<button hidden="hidden" onload = "getAluguel();">Enviar</button>
-		</form>		
+	<body onload="getAluguel();">	
 		<script type="text/javascript">
 			function getAluguel(){
 				$.ajax({
@@ -18,10 +15,11 @@
 
 				success: function(data) {
 					if(data == 1){
-						 window.location = "Pagina_consulta_aluguel_control.php";
+						 window.location = "resultado_consulta_aluguel.php";
 					}
 					else{
 						alert("O sistema não possui aluguéis no momento");
+						window.location = 'Pagina_principal.php';
 					}
 				}
 				});

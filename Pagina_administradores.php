@@ -22,6 +22,10 @@
 			<li>
 				<a href="Pagina_inserir_tipo.php">Inserir tipo de equipamento</a>
 			</li>
+
+			<li>
+				<a href="Pagina_excluir_doenca.php">Excluir doença</a>
+			</li>
 		</ul>
 	</body>
 </html>
